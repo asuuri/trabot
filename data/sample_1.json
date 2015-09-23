@@ -1,0 +1,11 @@
+{
+    "name": "Sample 1",
+    "description": "just a sample data package",
+    "port": 8582,
+    "request": {
+        "payload": "GET: /"
+    },
+    "response": {
+        "payload": "foo"
+    }
+}

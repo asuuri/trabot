@@ -1,0 +1,8 @@
+{
+  "url": "https://github.com/asuuri/trabot",
+  "license": "GPL",
+  "dependencies": {
+    "dojo": "^1.10.4",
+    "stdio": "^0.2.7"
+  }
+}
