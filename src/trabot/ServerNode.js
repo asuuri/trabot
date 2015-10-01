@@ -16,7 +16,6 @@ define(
 
             run: function() {
                 if (this.nodeData.port) {
-                    console.log(net);
                     this.server = net.createServer(
                         lang.hitch(this, 'handler')
                     );
@@ -29,13 +28,9 @@ define(
                 socket.setEncoding(ENCODING);
 
                 socket.on('data', lang.hitch(this, function(data) {
-                    console.log('onData', data);
+                    console.log('Request:\n---------------------\n', data, '\n---------------------');
                     socket.end(this.nodeData.response.payload);
                 }));
-
-                socket.on('close', function(data) {
-                    console.log('onClose', data);
-                });
             }
         }
     );

@@ -12,7 +12,7 @@ dojoConfig = {
         name: 'trabot',
         location: 'src/trabot'
     }],
-    deps: ['trabot/server']
+    deps: ['trabot/App']
 };
 
 require('./node_modules/dojo/dojo.js');

@@ -3,7 +3,7 @@
     "description": "just a sample data package",
     "port": 8582,
     "request": {
-        "payload": "GET: /"
+        "payload": "GET: /\n"
     },
     "response": {
         "payload": "foo"
