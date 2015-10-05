@@ -24,17 +24,17 @@ require([
             mandatory: true,
             description: 'Mode: server/client. Defaults to server.'
         },
-        /*clientIp: {
+        requestCount: {
             key: 'c',
             args: 1,
             mandatory: false,
-            description: 'Client ip address'
-        },*/
+            description: 'Repeat defined times.'
+        },
         serverIp: {
             key: 'a',
             args: 1,
             mandatory: false,
-            description: 'Server ip address'
+            description: 'Server ip address.'
         }
     });
 
@@ -51,6 +51,7 @@ require([
             if (options.mode === 'client') {
                 var data = JSON.parse(fileData);
                 data.serverIp = options.serverIp;
+                data.requestCount = options.requestCount;
 
                 var clientNode = new ClientNode(data);
                 clientNode.run();

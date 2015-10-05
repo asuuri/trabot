@@ -1,7 +1,7 @@
 {
     "name": "SQL injection test I",
     "description": "Simple SQL injection test",
-    "port": 80,
+    "port": 8087,
     "request": {
         "payload": "GET /pub/WWW/TheProject.html?q=select%20*%20from%20user%3B HTTP/1.1\nHost: www.foo.org\n"
     },
